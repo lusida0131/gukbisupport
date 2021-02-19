@@ -3,16 +3,40 @@ package ch05;
 public class ContinueBasic {
 
 	public static void main(String[] args) {
-		int num = 0;
 		int count = 0;
 		
-		while ((num++) < 100) {
+		for (int num = 1; num<100; num++) {
 			if (((num % 5) != 0) || ((num % 7) != 0))
-					continue; //5와 7의 배수 아니라면 나머지 건너뛰고 위로 이동
-			count++; // 5와 7의 배수인 경우만 실행
-			System.out.println(num); // 5와 7의 배수인 경우만 실행
+				continue;
+			count++;
+			System.out.println(num);
 		}
 		System.out.println("count: " + count);
+		
+		
+		//방법1)
+//		int sum = 0;    
+//		for (int num1 = 1; num1<65; num1++) {
+//			if (num1 % 2 == 1) {
+//				sum += num1;
+//				if (sum < 1000) {
+//					System.out.println(sum);
+//				}
+//				else System.out.println(sum);
+//				
+//			}				
+//		}
+		
+		
+		//방법2)
+		int sum = 0;    
+		for (int num1 = 1; sum<1000; num1++) {
+			if (num1 % 2 == 1) {
+				sum += num1;
+				System.out.println(sum);
+			}				
+		}
+		
 	}
 }
 
