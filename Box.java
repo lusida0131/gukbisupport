@@ -1,16 +1,8 @@
-package ch12;
+package ch15;
 
 class Box {
-	private String conts;
-	
-	Box(String cont) {
-		this.conts = cont;
+	public void simpleWrap() {
+		System.out.println("Simple Wrapping");
 	}
-	public String toString () {
-		return conts;
-	}
-	
-	public int length() {
-	return conts.length();
-	}
+
 }
