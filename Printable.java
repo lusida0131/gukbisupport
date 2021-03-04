@@ -1,6 +1,10 @@
 package ch17;
 
 interface Printable {
-	void print(String doc);
-	default void printCMYK1(String doc) { }
+	static void printLine(String str) {
+		System.out.println(str);
+	}
+	default void print(String doc) {
+		printLine(doc);
+	}
 }
