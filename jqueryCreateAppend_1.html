@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery Create</title>
+        <script src="http://code.jquery.com/jquery-3.4.1.js"></script>
+        <script>
+            $(document).ready(function () {
+                for (var i = 0; i < 10; i++) {
+                    $('<h1>Create Doucument Object + ' + i + '</h1>').css({
+                        backgroundColor: 'black',
+                        color: 'red'
+                    }).appendTo('body');
+                }
+            }); 
+        </script>
+    </head>
+</html>
