@@ -1,0 +1,66 @@
+* {
+    margin: 0; padding: 0; 
+}  /*로그인 화면에서 전체에 margin 0, padding 0을 주었다.*/
+body {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgba(238, 237, 237, 0.993);
+} /*로그인 화면에서 바디 배치와 배경색.*/
+form {
+    background-color: rgb(45, 75, 209);
+    padding: 80px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    width: 300px;
+    height: 400px;
+} /*로그인 화면에서 로그인화면 배치와 배경색*/
+form h2 {
+    margin-top: 20px;
+    font-size: 2.5rem;
+    color: white;
+} /*로그인 화면에서 로그인 글자 글자색과 크기*/
+form input {
+    border: none;
+    background: none;
+    text-align: center;
+    outline: none;
+    padding: 10px;
+    margin: 20px;
+    color: white;
+    height: 30px;
+    width: 60%;
+    border-radius: 40px;
+    transition: 0.2s ease-in;
+} /*로그인 화면에서 이메일 비밀번호 작성시 글자색 .*/
+form input[type="text"],
+form input[type="password"],
+form input[type="button"] {
+    border: solid 2px #ffc400;
+} 
+form input[type="submit"], 
+form input[type="button"] {
+    border: solid 2px #ec3b3b;
+    box-sizing: border-box;
+    height: 50px;
+    width: 50%;
+    cursor: pointer;
+}
+form input[type="text"]:focus,
+form input[type="password"]:focus,
+form input[type="button"]:focus {
+    width: 80%;
+    border: solid 2px #ec3b3b;
+}
+form input[type="submit"]:hover{
+    background: #ec3b3b;
+    color: #000;
+}
+form input[type="button"]:hover {
+    background: #ec3b3b;
+    color: #000;
+} /*로그인 화면에서 마우스로 클릭했을때 반응형과 마우스를 가져다놨을때 반응형.*/

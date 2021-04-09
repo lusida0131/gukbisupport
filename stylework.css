@@ -1,0 +1,99 @@
+body{
+    margin: 0;
+    font-family: 'Source Sans Pro';
+    background-color: rgba(238, 237, 237, 0.993);
+} /*운동 화면에서 바디 글꼴과 글자색.*/
+a {
+    text-decoration: none;
+    color: white;
+}   /*운동 화면에서 상단 메뉴 글자색.*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(45, 75, 209);
+    padding: 8px 12px;
+} /*운동 화면에서 상단 메뉴 배경색과 위치.*/
+.navbar_logo {
+    font-size: 24px;
+    color: white;
+} /*운동 화면에서 상단 메뉴 좌측 로고 크기와 색.*/
+.nava_logo i {
+    color: white;
+} /*운동 화면에서 상단 메뉴 좌측 로고.*/
+.navbar_menu {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    width: 800px;
+    justify-content: space-between;
+} /*운동 화면에서 상단 메뉴 크기와 위치.*/
+.navbar_menu li {
+    padding: 8px 12px;
+} /*운동 화면에서 상단 메뉴 padding.*/
+.navbar_menu li:hover {
+    background-color: rgb(240, 167, 33);
+    border-radius: 4px;
+} /*운동 화면에서 상단 메뉴 반응형 색.*/
+.navbar_icons {
+    list-style: none;
+    color: white;
+    display: flex;
+    padding: 0;
+}/*운동 화면에서 상단 메뉴 우측 로고.*/
+.navbar_icons li {
+    padding: 8px 12px;
+} /*운동 화면에서 상단 메뉴 우측 로고 padding.*/
+.navbar_toggleBtn {
+    display: none;
+    position: absolute;
+    right: 32px;
+    font-size: 24px;
+}
+.article-title {
+    text-align: center;
+} /*운동 화면에서 본문 글자 위치.*/
+.title {
+    text-align: center;
+} /*운동 화면에서 본문 동영상 글자 위치.*/
+.title1 {
+    text-align: center;
+} /*운동 화면에서 본문 동영상 글자 위치.*/
+.title2 {
+    text-align: center;
+}/*운동 화면에서 본문 동영상 글자 위치.*/
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+
+    }
+    .navbar_menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .navbar_menu li {
+        width: 100%;
+        text-align: center;
+    }
+    .navbar_menu > li > a {
+        display: block;
+        padding: 8px 16px;
+        text-align: center;
+    }
+    .navbar_icons {
+        display: none;
+        justify-content: center;
+        width: 100%;
+    }
+    .navbar_toggleBtn {
+        display: block;
+    }
+    .navbar_menu.active,
+    .navbar_icons.active {
+        display: flex;
+    }
+} /*운동 화면 반응형 설정.*/
